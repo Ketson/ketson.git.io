@@ -679,11 +679,6 @@ section.contact-me {
     text-align: center;
 }
 
-iframe{
-    width: 50%;
-    height: 500px;
-    border: 5px solid  #fff;
-}
 
 @media screen and (max-width: 1680px) {
     .menu {
