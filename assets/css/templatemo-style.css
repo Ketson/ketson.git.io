@@ -1,3 +1,10 @@
+/*
+
+Reflux Template
+
+https://templatemo.com/tm-531-reflux
+
+*/
 
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
@@ -540,18 +547,19 @@ section.my-work .section-heading {
     background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
     min-height: 60px;
 }
+/*mapa*/
+
 
 /* --- Contact --- */
+/* --- Map --- */
 
-.contact-info {
-    width: 100%;
-    padding: 15px;
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
     text-align: justify;
-    margin-top:40px;
-    font-size: 20px;
     background-color: rgba(160, 160, 160, 0.185);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    transition: all 0.5s;
 }
 
 .contact-info p {
@@ -559,19 +567,44 @@ section.my-work .section-heading {
 }
 
 .contact-info ul {
-	color:#fff;
-    list-style:none;
+    color:#fff;
+}
+
+.contact-info h4 {
+    padding-top: 0px;
+    text-align: start;
 }
 
 .contact-info ul li {
-	margin-top:20px;
-    margin-bottom:20px;
+    align-items: center;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    font-size: 18px;
+    margin-left: 0px;
+    text-align: justify;
+}
+.contact-info li{
+    margin: 10px;
 }
 
 .contact-info i {
     color: #a43f49;
+    margin-right: 5px;
+}
+.col-md-5{
+    flex: 1;
+    align-items: center;
 }
 
+.mapa{
+    flex: 1;
+}
+
+.mapa iframe {
+    flex: 1;
+    width: 100%;
+    height: 378px;
+}
 
 .validation {
     color: red;
@@ -637,10 +670,10 @@ textarea.contact {
 	text-align:center;
 		margin:0px;
 	border:none !important;
-    border-radius:3px;
+	border-radius:3px;
 }
 .contact.submit:hover {
-    background: #a43f49 ;
+	background: #a43f49 ;
 }
 .done {
 	display:none;
@@ -689,8 +722,7 @@ textarea.contact {
 	width:45px !important;
 	height:45px !important;
 		-webkit-border-radius:3px;
-    border-radius:3px;
-    transition: all 0.5s;
+	border-radius:3px;
 }
 .footer ul li:hover {
 	background: #fff;
@@ -730,20 +762,8 @@ textarea.contact {
 	position:absolute;
 	margin-left:-30px;
 	top:-35px;
-    border-radius:50%;
-    transition: all 0.5s;
+	border-radius:50%;
 }
-.gototop:hover{
-    display:inline-block;
-	width:70px;
-	height:70px;
-	background: #fff;
-	position:absolute;
-	margin-left:-30px;
-	top:-35px;
-    border-radius:50%;
-}
-
 .gototop i {
 	color:#a43f49 ;
 	line-height:70px;
@@ -884,6 +904,12 @@ section.contact-me {
     text-align: center;
 }
 
+iframe{
+    width: 50%;
+    height: 500px;
+    border: 5px solid  #fff;
+}
+
 @media screen and (max-width: 1680px) {
     .menu {
         left: 5%;
@@ -1015,5 +1041,5 @@ section.contact-me {
     }
     .isotope-toolbar {
         margin-bottom: 20px;
-    }
+    }    
 }
