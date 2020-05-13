@@ -576,23 +576,22 @@ section.my-work .section-heading {
 }
 
 .contact-info ul li {
-    align-items: center;
-    display: flex;
     padding: 20px 0px 20px 0px;
     font-size: 18px;
     margin-left: 0px;
-    text-align: justify;
 }
 .contact-info li{
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info i {
     color: #a43f49;
-    margin-right: 5px;
+    align-items: center;
+    margin: 10px;
 }
 .col-md-5{
-    flex: 1;
     align-items: center;
 }
 
